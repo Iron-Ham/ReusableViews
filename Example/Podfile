@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ReusableViews_Example' do
+  pod 'ReusableViews', :path => '../'
+
+  target 'ReusableViews_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.0.0'
+  pod 'Nimble', '~> 5.1.1'
+  end
+end
