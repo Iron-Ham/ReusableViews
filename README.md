@@ -106,6 +106,7 @@ pod "ReusableViews"
 ## Author
 
 Hesham Salman, hesham8@gmail.com
+
 Twitter: @WhatsASoftware
 
 ## License
