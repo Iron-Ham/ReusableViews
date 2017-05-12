@@ -33,7 +33,7 @@ Requires that a class has the same storyboard identifier as its class name.
 
 ```swift
 let myStoryboard: UIStoryboard = ...
-let myCustomViewController = myStoryboard.instantiateViewControllerOfType(ExampleCollectionViewCellViewController.self) as MyCustomViewController
+let myCustomViewController = myStoryboard.instantiateViewControllerOfType(MyCustomViewController.self) as MyCustomViewController
 ```
 
 ### Dequeueing and Registering a UITableViewCell
