@@ -15,7 +15,7 @@ This extension package solves the following problems:
 - Removes the need to force unwrap or force cast cells/headers as you dequeue
 - Removes the need to force unwrap or force cast UIViewControllers as you instantiate them from a storyboard
 
-If you're a user of SwiftLint, you'll greatly appreciate the reduced number of warnings and a reduced need for the following snippet:
+If you're a user of SwiftLint, you'll greatly appreciate the reduced number of warnings and no more need for snippets in the vein of:
 
 ```swift
 guard let cell = tableView.dequeueReusableCell(withIdentifier: "...", for: indexPath) as? MyCustomCellType else {
