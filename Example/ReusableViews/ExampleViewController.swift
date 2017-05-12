@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ReusableViews
 //
-//  Created by heshamsalman on 05/11/2017.
-//  Copyright (c) 2017 heshamsalman. All rights reserved.
+//  Created by Hesham Salman on 05/11/2017.
+//  Copyright (c) 2017 Hesham Salman. All rights reserved.
 //
 
 import UIKit
