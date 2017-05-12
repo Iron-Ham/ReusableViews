@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  ReusableViews
+
+  Created by Hesham Salman on 5/11/17.
+  Copyright © 2017 heshamsalman. All rights reserved.
+*/
+
+/// ExampleViewController.swift
+"ExampleViewController:SectionHeader:TableView" = "Table View Examples";
+"ExampleViewController:SectionHeader:CollectionView" = "Collection View Examples";
+
+"ExampleViewController:CellName:TableViewCell" = "Table View Cell Example";
+"ExampleViewController:CellName:TableViewHeaderFooter" = "Table View Header/Footer Example";
+
+"ExampleViewController:CellName:CollectionViewCell" = "Collection View Cell Example";
+"ExampleViewController:CellName:CollectionViewHeaderFooter" = "Collection View Header/Footer Example";
+

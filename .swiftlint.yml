@@ -1,0 +1,44 @@
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - missing_docs
+  - redundant_nil_coalescing
+  - switch_case_on_newline
+  - nimble_operator
+  - force_unwrapping
+  - conditional_returns_on_newline
+  - closure_spacing
+  - implicitly_unwrapped_optional
+  - sorted_imports
+  - valid_docs
+  # Find all the available rules by running:
+  # swiftlint rules
+included: # paths to include during linting. `--path` is ignored if present.
+  - ../ReusableViews
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  # - Example/Pods
+
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+force_cast: warning # implicitly
+weak_delegate: error
+force_try:
+  severity: warning # explicitly
+line_length: 140
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+identifier_name:
+  min_length: # only min_length
+    error: 4 # only error
+  excluded: # excluded via string array
+    - all
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, emoji)
+missing_docs: public

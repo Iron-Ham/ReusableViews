@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A10D9603DCABDE52B7D6B65 /* Pods_ReusableViews_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDF1D9AD8BADFFFFBE6A731 /* Pods_ReusableViews_Tests.framework */; };
+		0C295E5B23473B1195404B01 /* Pods_ReusableViews_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F602167C537265837A63863 /* Pods_ReusableViews_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ExampleViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		74B550562244FFBDEAA8D73E /* Pods_ReusableViews_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA150C86D740DEEEC658EAA /* Pods_ReusableViews_Example.framework */; };
+		607FACEC1AFB9204008FA782 /* ReusableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */; };
+		A39953B27D8DAEC7A1C02740 /* Pods_ReusableViews_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */; };
+		DC304F6F1EC527F90045FF8A /* ExampleTableViewHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */; };
+		DC304F711EC528BF0045FF8A /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC304F701EC528BF0045FF8A /* TestingViewController.swift */; };
+		DC304F731EC528F10045FF8A /* TestingViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC304F721EC528F00045FF8A /* TestingViewController1.swift */; };
+		DC611B241EC4E54500ECCBDA /* UICollectionViewElementKindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */; };
+		DC611B261EC4F61F00ECCBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC611B251EC4F61F00ECCBDA /* Localizable.strings */; };
+		DC611B281EC4FA1E00ECCBDA /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */; };
+		DC611B2A1EC4FF1600ECCBDA /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B291EC4FF1600ECCBDA /* GlobalConstants.swift */; };
+		DC611B2C1EC500EB00ECCBDA /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC611B2B1EC500EB00ECCBDA /* ExampleTableViewCell.xib */; };
+		DC611B381EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */; };
+		DC611B3A1EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */; };
+		DC611B3C1EC507B300ECCBDA /* ExampleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B3B1EC507B300ECCBDA /* ExampleCollectionViewCell.swift */; };
+		DC611B3E1EC507CE00ECCBDA /* ExampleCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC611B3D1EC507CE00ECCBDA /* ExampleCollectionCell.xib */; };
+		DC611B401EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */; };
+		DC611B421EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B411EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift */; };
+		DC611B441EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC611B431EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib */; };
+		DC611B481EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC611B471EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib */; };
+		DC611B4A1EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B491EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,25 +45,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		002AFB7644035BAA1E5D277E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		0DDF1D9AD8BADFFFFBE6A731 /* Pods_ReusableViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AA150C86D740DEEEC658EAA /* Pods_ReusableViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D4D9514D4979B26B2C8C6AF /* Pods-ReusableViews_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example.release.xcconfig"; sourceTree = "<group>"; };
-		577B02570A245C048C711530 /* Pods-ReusableViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		002AFB7644035BAA1E5D277E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0A36AFEBF238AA65C312E5A6 /* Pods-ReusableViews_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3F602167C537265837A63863 /* Pods_ReusableViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5779F81E011E8014C35CD140 /* Pods-ReusableViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ReusableViews_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReusableViews_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ReusableViews_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableViews_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7A4E6F39139D19FB32F412A0 /* ReusableViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ReusableViews.podspec; path = ../ReusableViews.podspec; sourceTree = "<group>"; };
-		8DEACE4EB9807A0CA7034EE1 /* Pods-ReusableViews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B3D0082B9B693FB8131BE9D1 /* Pods-ReusableViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F3BF0E982F601EED3ECE2ABA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewSpec.swift; sourceTree = "<group>"; };
+		6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4E6F39139D19FB32F412A0 /* ReusableViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReusableViews.podspec; path = ../ReusableViews.podspec; sourceTree = "<group>"; };
+		DC304F701EC528BF0045FF8A /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		DC304F721EC528F00045FF8A /* TestingViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController1.swift; sourceTree = "<group>"; };
+		DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewElementKindSpec.swift; sourceTree = "<group>"; };
+		DC611B251EC4F61F00ECCBDA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		DC611B291EC4FF1600ECCBDA /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		DC611B2B1EC500EB00ECCBDA /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewHeaderFooterViewController.swift; sourceTree = "<group>"; };
+		DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCellViewController.swift; sourceTree = "<group>"; };
+		DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCellViewController.swift; sourceTree = "<group>"; };
+		DC611B3B1EC507B300ECCBDA /* ExampleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewCell.swift; sourceTree = "<group>"; };
+		DC611B3D1EC507CE00ECCBDA /* ExampleCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCollectionCell.xib; sourceTree = "<group>"; };
+		DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewHeaderFooterViewController.swift; sourceTree = "<group>"; };
+		DC611B411EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleCollectionViewSupplementaryView.swift; sourceTree = "<group>"; };
+		DC611B431EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleCollectionViewSupplementaryView.xib; sourceTree = "<group>"; };
+		DC611B471EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewHeaderFooterView.xib; sourceTree = "<group>"; };
+		DC611B491EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewHeaderFooterView.swift; sourceTree = "<group>"; };
+		F28449C8570C7597DC6C9DB0 /* Pods-ReusableViews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F3BF0E982F601EED3ECE2ABA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F8AE53B6915C3A8C40C88F0B /* Pods-ReusableViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReusableViews_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74B550562244FFBDEAA8D73E /* Pods_ReusableViews_Example.framework in Frameworks */,
+				0C295E5B23473B1195404B01 /* Pods_ReusableViews_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A10D9603DCABDE52B7D6B65 /* Pods_ReusableViews_Tests.framework in Frameworks */,
+				A39953B27D8DAEC7A1C02740 /* Pods_ReusableViews_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +110,8 @@
 				607FACD21AFB9204008FA782 /* Example for ReusableViews */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				BA0FDFF62944D44AE39BF8DB /* Pods */,
-				FB162EB057B54D312F614AA6 /* Frameworks */,
+				FFD8920C433CA64E2A39396B /* Pods */,
+				94577F6E793FB581649171C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,12 +127,14 @@
 		607FACD21AFB9204008FA782 /* Example for ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				DC611B301EC5027300ECCBDA /* Views */,
+				DC611B2F1EC5026900ECCBDA /* Controllers */,
+				DC611B2E1EC5024000ECCBDA /* Assets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				DC611B2D1EC5022D00ECCBDA /* Storyboards & Nibs */,
+				DC611B251EC4F61F00ECCBDA /* Localizable.strings */,
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				DC611B291EC4FF1600ECCBDA /* GlobalConstants.swift */,
 			);
 			name = "Example for ReusableViews";
 			path = ReusableViews;
@@ -115,7 +151,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */,
+				DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -139,24 +176,70 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		BA0FDFF62944D44AE39BF8DB /* Pods */ = {
+		94577F6E793FB581649171C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3D0082B9B693FB8131BE9D1 /* Pods-ReusableViews_Example.debug.xcconfig */,
-				2D4D9514D4979B26B2C8C6AF /* Pods-ReusableViews_Example.release.xcconfig */,
-				577B02570A245C048C711530 /* Pods-ReusableViews_Tests.debug.xcconfig */,
-				8DEACE4EB9807A0CA7034EE1 /* Pods-ReusableViews_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FB162EB057B54D312F614AA6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1AA150C86D740DEEEC658EAA /* Pods_ReusableViews_Example.framework */,
-				0DDF1D9AD8BADFFFFBE6A731 /* Pods_ReusableViews_Tests.framework */,
+				3F602167C537265837A63863 /* Pods_ReusableViews_Example.framework */,
+				6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC611B2D1EC5022D00ECCBDA /* Storyboards & Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				DC611B2B1EC500EB00ECCBDA /* ExampleTableViewCell.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				DC611B3D1EC507CE00ECCBDA /* ExampleCollectionCell.xib */,
+				DC611B431EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib */,
+				DC611B471EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib */,
+			);
+			name = "Storyboards & Nibs";
+			sourceTree = "<group>";
+		};
+		DC611B2E1EC5024000ECCBDA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		DC611B2F1EC5026900ECCBDA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ExampleViewController.swift */,
+				DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */,
+				DC304F701EC528BF0045FF8A /* TestingViewController.swift */,
+				DC304F721EC528F00045FF8A /* TestingViewController1.swift */,
+				DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */,
+				DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */,
+				DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DC611B301EC5027300ECCBDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */,
+				DC611B3B1EC507B300ECCBDA /* ExampleCollectionViewCell.swift */,
+				DC611B411EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift */,
+				DC611B491EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FFD8920C433CA64E2A39396B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8AE53B6915C3A8C40C88F0B /* Pods-ReusableViews_Example.debug.xcconfig */,
+				0A36AFEBF238AA65C312E5A6 /* Pods-ReusableViews_Example.release.xcconfig */,
+				5779F81E011E8014C35CD140 /* Pods-ReusableViews_Tests.debug.xcconfig */,
+				F28449C8570C7597DC6C9DB0 /* Pods-ReusableViews_Tests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +249,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ReusableViews_Example" */;
 			buildPhases = (
-				00055E7BA3E4F4599BA910C3 /* [CP] Check Pods Manifest.lock */,
+				018E0BD68BC5A1A791C71B75 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				F04334C38E434A8CF275F7D6 /* [CP] Embed Pods Frameworks */,
-				336BC46359F769E8BE6211E3 /* [CP] Copy Pods Resources */,
+				DC611B211EC4C06F00ECCBDA /* SwiftLint */,
+				F8F2C731D07F0049E34FD958 /* [CP] Embed Pods Frameworks */,
+				D533545B0DA6F37F26ED690D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,12 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "ReusableViews_Tests" */;
 			buildPhases = (
-				36563EB72645330A795770C0 /* [CP] Check Pods Manifest.lock */,
+				9B032AAE4C7E252556B6220E /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				DF7515403FF7D514CDFBBB24 /* [CP] Embed Pods Frameworks */,
-				5F5206E3BFE520CCD0223233 /* [CP] Copy Pods Resources */,
+				0C75FC16E7C560064B38B652 /* [CP] Embed Pods Frameworks */,
+				BE519C99EDF8165BA5BA7600 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,8 +333,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				DC611B441EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib in Resources */,
+				DC611B2C1EC500EB00ECCBDA /* ExampleTableViewCell.xib in Resources */,
+				DC611B261EC4F61F00ECCBDA /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				DC611B3E1EC507CE00ECCBDA /* ExampleCollectionCell.xib in Resources */,
+				DC611B481EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +353,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00055E7BA3E4F4599BA910C3 /* [CP] Check Pods Manifest.lock */ = {
+		018E0BD68BC5A1A791C71B75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,52 +368,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		336BC46359F769E8BE6211E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		36563EB72645330A795770C0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5F5206E3BFE520CCD0223233 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF7515403FF7D514CDFBBB24 /* [CP] Embed Pods Frameworks */ = {
+		0C75FC16E7C560064B38B652 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,7 +383,66 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F04334C38E434A8CF275F7D6 /* [CP] Embed Pods Frameworks */ = {
+		9B032AAE4C7E252556B6220E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE519C99EDF8165BA5BA7600 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D533545B0DA6F37F26ED690D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC611B211EC4C06F00ECCBDA /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config ../.swiftlint.yml\n";
+		};
+		F8F2C731D07F0049E34FD958 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,8 +464,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				DC304F6F1EC527F90045FF8A /* ExampleTableViewHeaderFooterViewController.swift in Sources */,
+				DC611B401EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ExampleViewController.swift in Sources */,
+				DC304F711EC528BF0045FF8A /* TestingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DC611B421EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift in Sources */,
+				DC304F731EC528F10045FF8A /* TestingViewController1.swift in Sources */,
+				DC611B3A1EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift in Sources */,
+				DC611B2A1EC4FF1600ECCBDA /* GlobalConstants.swift in Sources */,
+				DC611B3C1EC507B300ECCBDA /* ExampleCollectionViewCell.swift in Sources */,
+				DC611B4A1EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift in Sources */,
+				DC611B281EC4FA1E00ECCBDA /* ExampleTableViewCell.swift in Sources */,
+				DC611B381EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				DC611B241EC4E54500ECCBDA /* UICollectionViewElementKindSpec.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ReusableViewSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +608,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3D0082B9B693FB8131BE9D1 /* Pods-ReusableViews_Example.debug.xcconfig */;
+			baseConfigurationReference = F8AE53B6915C3A8C40C88F0B /* Pods-ReusableViews_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReusableViews/Info.plist;
@@ -507,7 +622,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D4D9514D4979B26B2C8C6AF /* Pods-ReusableViews_Example.release.xcconfig */;
+			baseConfigurationReference = 0A36AFEBF238AA65C312E5A6 /* Pods-ReusableViews_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReusableViews/Info.plist;
@@ -521,7 +636,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 577B02570A245C048C711530 /* Pods-ReusableViews_Tests.debug.xcconfig */;
+			baseConfigurationReference = 5779F81E011E8014C35CD140 /* Pods-ReusableViews_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -541,7 +656,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DEACE4EB9807A0CA7034EE1 /* Pods-ReusableViews_Tests.release.xcconfig */;
+			baseConfigurationReference = F28449C8570C7597DC6C9DB0 /* Pods-ReusableViews_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

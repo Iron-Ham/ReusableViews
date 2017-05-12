@@ -1,0 +1,6 @@
+framework module Pods_ReusableViews_Tests {
+  umbrella header "Pods-ReusableViews_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
