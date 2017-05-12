@@ -14,7 +14,7 @@ class TableViewHeaderExampleViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return StandardTableViewHeaderSize
+    return standardTableViewHeaderSize
   }
 
   override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -6,8 +6,8 @@
 //  Copyright © 2017 Hesham Salman. All rights reserved.
 //
 
-import UIKit
 import ReusableViews
+import UIKit
 
 class ExampleTableViewCell: UITableViewCell, NibLoadableView {
   @IBOutlet weak var titleLabel: UILabel!

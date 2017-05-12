@@ -6,8 +6,8 @@
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
-import Quick
 import Nimble
+import Quick
 
 @testable import ReusableViews
 class UICollectionViewElementKindSpec: QuickSpec {
@@ -15,12 +15,12 @@ class UICollectionViewElementKindSpec: QuickSpec {
     describe("UICollectionViewElementKind") {
       it("returns all cases with static `all`") {
         let expected: [UICollectionViewElementKind] = [.sectionHeader, .sectionFooter]
-        expect(UICollectionViewElementKind.all).to(equal(expected))
+        expect(UICollectionViewElementKind.all) == expected
       }
 
       it("has the correct count on the enumeration") {
         let expected = 2
-        expect(UICollectionViewElementKind.count).to(equal(expected))
+        expect(UICollectionViewElementKind.count) == expected
       }
 
       describe("Type") {
@@ -33,7 +33,7 @@ class UICollectionViewElementKindSpec: QuickSpec {
           }
 
           it("has the correct type") {
-            expect(elementKind.type).to(equal(UICollectionElementKindSectionFooter))
+            expect(elementKind.type) == UICollectionElementKindSectionFooter
           }
         }
 
@@ -45,7 +45,7 @@ class UICollectionViewElementKindSpec: QuickSpec {
           }
 
           it("has the correct type") {
-            expect(elementKind.type).to(equal(UICollectionElementKindSectionHeader))
+            expect(elementKind.type) == UICollectionElementKindSectionHeader
           }
         }
       }

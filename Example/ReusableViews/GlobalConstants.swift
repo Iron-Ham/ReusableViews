@@ -7,5 +7,5 @@
 
 import UIKit
 
-let StandardTableViewCellSize: CGFloat = 60.0
-let StandardTableViewHeaderSize: CGFloat = 30.0
+let standardTableViewCellSize: CGFloat = 60.0
+let standardTableViewHeaderSize: CGFloat = 30.0

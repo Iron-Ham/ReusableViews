@@ -11,13 +11,15 @@ import UIKit
 
 class ExampleCollectionViewHeaderFooterViewController: UICollectionViewController {
 
-
   override func viewDidLoad() {
     collectionView?.register(ExampleCollectionViewSupplementaryView.self, forSupplementaryViewElementOfKind: .sectionHeader)
   }
 
-  override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-    let view = collectionView.dequeueReusableSupplementaryView(ofKind: .sectionHeader, for: indexPath) as ExampleCollectionViewSupplementaryView
+  override func collectionView(_ collectionView: UICollectionView,
+                               viewForSupplementaryElementOfKind kind: String,
+                               at indexPath: IndexPath) -> UICollectionReusableView {
+    let view = collectionView.dequeueReusableSupplementaryView(ofKind: .sectionHeader,
+                                                               for: indexPath) as ExampleCollectionViewSupplementaryView
     view.titleLabel.text = "COOL EXAMPLE  DUDE"
     return view
   }

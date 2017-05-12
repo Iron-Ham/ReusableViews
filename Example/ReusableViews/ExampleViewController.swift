@@ -6,8 +6,8 @@
 //  Copyright (c) 2017 Hesham Salman. All rights reserved.
 //
 
-import UIKit
 import ReusableViews
+import UIKit
 
 class ExampleViewController: UIViewController {
 
@@ -23,16 +23,17 @@ class ExampleViewController: UIViewController {
 
 extension ExampleViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return StandardTableViewCellSize
+    return standardTableViewCellSize
   }
 
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    return StandardTableViewHeaderSize
+    return standardTableViewHeaderSize
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     guard let section = Section(rawValue: indexPath.section),
-      let exampleType: ExampleType = section == .collectionView ? CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row) else {
+      let exampleType: ExampleType = section == .collectionView ?
+        CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row) else {
       fatalError("Unexpected section")
     }
     navigationController?.pushViewController(exampleType.controller, animated: true)
@@ -72,7 +73,8 @@ extension ExampleViewController: UITableViewDataSource {
     }
     let cell = tableView.dequeueReusableCell(for: indexPath) as ExampleTableViewCell
 
-    let exampleType: ExampleType? = section == .collectionView ? CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row)
+    let exampleType: ExampleType? = section == .collectionView ?
+      CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row)
     cell.titleLabel.text = exampleType?.title
 
     return cell
@@ -153,10 +155,11 @@ fileprivate enum CollectionViewExample: Int, ExampleType {
     switch self {
     case .headerfooter:
       let flowLayout = UICollectionViewFlowLayout()
-      flowLayout.headerReferenceSize = CGSize(width: UIScreen.main.bounds.width, height: StandardTableViewHeaderSize)
+      flowLayout.headerReferenceSize = CGSize(width: UIScreen.main.bounds.width, height: standardTableViewHeaderSize)
       return ExampleCollectionViewHeaderFooterViewController(collectionViewLayout: flowLayout)
     case .cell:
-      return UIStoryboard(name: "Main", bundle: Bundle(for: ExampleViewController.self)).instantiateViewControllerOfType(ExampleCollectionViewCellViewController.self)
+      return UIStoryboard(name: "Main", bundle: Bundle(for: ExampleViewController.self))
+        .instantiateViewControllerOfType(ExampleCollectionViewCellViewController.self)
     }
   }
 
