@@ -62,7 +62,7 @@ let cell = collectionView.dequeueReusableCell(for: indexPath) as MyCustomCellTyp
 
 ### Dequeueing and Registering a UITableViewHeaderFooterView
 
-Requires that a class has the same reuse identifier as its class name. You must register your view type first.
+Requires that a class has the same reuse identifier as its class name. You must register your cell type first.
 
 ```swift
 // Registration
@@ -74,12 +74,24 @@ let header = tableView.dequeueReusableHeaderFooterView(inSection: section) as My
 
 ### Dequeueing and Registering a UICollectionView Supplementary View
 
+Requires that a class has the same reuse identifier as its class name. You must register your view type first.
+
 ```swift
 // Registration
 collectionView.register(MyCustomSupplementaryView.self, forSupplementaryViewElementOfKind: .sectionHeader) // or .sectionFooter
 
 // Dequeueing
 let view = collectionView.dequeueReusableSupplementaryView(ofKind: .sectionHeader, for: indexPath) as MyCustomSupplementaryView // also takes .sectionFooter
+```
+
+### Registering a view backed by a nib
+
+Views backed by nibs must implement the `NibLoadableView` protocol. The protocol has a pre-defined extension, such that your view doesn't need to add any methods or properties.
+
+```swift
+class MyCoolCell: UITableViewCell, NibLoadableView {
+  ...
+}
 ```
 
 ## Installation
