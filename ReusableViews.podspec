@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint ReusableViews.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'ReusableViews'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ReusableViews.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Instantiate UIViewControllers from storyboards and dequeue views without a bang!'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ReusableViews is a sugar library that allows you to dequeue UITableViewCells, UICollectionViewCells,
+UITableViewHeaderFooterViews, UICollectionViewReusableViews (supplementary views) without a bang or force cast. It also
+allows you to instantiate view controllers from the storyboard without using a bang or force casting.
                        DESC
 
   s.homepage         = 'https://github.com/heshamsalman/ReusableViews'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'heshamsalman' => 'hesham.salman@viewthespace.com' }
+  s.author           = { 'heshamsalman' => 'hesham8@gmail.com' }
   s.source           = { :git => 'https://github.com/heshamsalman/ReusableViews.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/WhatsASoftware'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ReusableViews/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ReusableViews' => ['ReusableViews/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
