@@ -16,8 +16,6 @@
 		607FACEC1AFB9204008FA782 /* ReusableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */; };
 		A39953B27D8DAEC7A1C02740 /* Pods_ReusableViews_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */; };
 		DC304F6F1EC527F90045FF8A /* ExampleTableViewHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */; };
-		DC304F711EC528BF0045FF8A /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC304F701EC528BF0045FF8A /* TestingViewController.swift */; };
-		DC304F731EC528F10045FF8A /* TestingViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC304F721EC528F00045FF8A /* TestingViewController1.swift */; };
 		DC611B241EC4E54500ECCBDA /* UICollectionViewElementKindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */; };
 		DC611B261EC4F61F00ECCBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC611B251EC4F61F00ECCBDA /* Localizable.strings */; };
 		DC611B281EC4FA1E00ECCBDA /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */; };
@@ -61,8 +59,6 @@
 		607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewSpec.swift; sourceTree = "<group>"; };
 		6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4E6F39139D19FB32F412A0 /* ReusableViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReusableViews.podspec; path = ../ReusableViews.podspec; sourceTree = "<group>"; };
-		DC304F701EC528BF0045FF8A /* TestingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
-		DC304F721EC528F00045FF8A /* TestingViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingViewController1.swift; sourceTree = "<group>"; };
 		DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewElementKindSpec.swift; sourceTree = "<group>"; };
 		DC611B251EC4F61F00ECCBDA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
@@ -211,8 +207,6 @@
 			children = (
 				607FACD71AFB9204008FA782 /* ExampleViewController.swift */,
 				DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */,
-				DC304F701EC528BF0045FF8A /* TestingViewController.swift */,
-				DC304F721EC528F00045FF8A /* TestingViewController1.swift */,
 				DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */,
 				DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */,
 				DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */,
@@ -467,10 +461,8 @@
 				DC304F6F1EC527F90045FF8A /* ExampleTableViewHeaderFooterViewController.swift in Sources */,
 				DC611B401EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ExampleViewController.swift in Sources */,
-				DC304F711EC528BF0045FF8A /* TestingViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				DC611B421EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift in Sources */,
-				DC304F731EC528F10045FF8A /* TestingViewController1.swift in Sources */,
 				DC611B3A1EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift in Sources */,
 				DC611B2A1EC4FF1600ECCBDA /* GlobalConstants.swift in Sources */,
 				DC611B3C1EC507B300ECCBDA /* ExampleCollectionViewCell.swift in Sources */,
