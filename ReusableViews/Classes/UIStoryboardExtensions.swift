@@ -15,8 +15,7 @@ public extension UIStoryboard {
   ///
   /// - Parameter _: UIViewController Type
   /// - Returns: UIViewController
-  func instantiateViewControllerOfType<ViewController: UIViewController>(_: ViewController.Type) -> ViewController
-    where ViewController: StoryboardCompatibleView {
+  func instantiateViewControllerOfType<ViewController: UIViewController>(_: ViewController.Type) -> ViewController {
       guard let viewController = instantiateViewController(withIdentifier: ViewController.storyboardIdentifier) as? ViewController else {
         fatalError("Could not instantiate view controller with identifier: \(ViewController.storyboardIdentifier)")
       }

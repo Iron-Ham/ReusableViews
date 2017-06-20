@@ -99,8 +99,14 @@ class MyCoolCell: UITableViewCell, NibLoadableView {
 ReusableViews is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+### Swift 3
 ```ruby
-pod "ReusableViews"
+pod 'ReusableViews', '~> 0.1'
+```
+
+### Swift 4
+```ruby
+pod 'ReusableViews', '~> 1.0'
 ```
 
 ## Author
