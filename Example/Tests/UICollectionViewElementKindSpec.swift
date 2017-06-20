@@ -6,49 +6,27 @@
 //  Copyright © 2017 CocoaPods. All rights reserved.
 //
 
-import Nimble
-import Quick
-
 @testable import ReusableViews
-class UICollectionViewElementKindSpec: QuickSpec {
-  override func spec() {
-    describe("UICollectionViewElementKind") {
-      it("returns all cases with static `all`") {
-        let expected: [UICollectionViewElementKind] = [.sectionHeader, .sectionFooter]
-        expect(UICollectionViewElementKind.all) == expected
-      }
+import XCTest
 
-      it("has the correct count on the enumeration") {
-        let expected = 2
-        expect(UICollectionViewElementKind.count) == expected
-      }
+class UICollectionViewElementKindSpec: XCTestCase {
 
-      describe("Type") {
-        context("when it is a section footer") {
+  func test_uicollectionView_elementKind_returnsAllCases() {
+    let expected: [UICollectionViewElementKind] = [.sectionHeader, .sectionFooter]
+    XCTAssertEqual(UICollectionViewElementKind.all, expected)
+  }
 
-          var elementKind: UICollectionViewElementKind!
+  func test_uicollectionView_elmentKind_hasCorrectCount() {
+    XCTAssertEqual(UICollectionViewElementKind.count, 2)
+  }
 
-          beforeEach {
-            elementKind = UICollectionViewElementKind.sectionFooter
-          }
+  func test_uicollectionView_elementKind_type_sectionFooter() {
+    let elementKind = UICollectionViewElementKind.sectionFooter
+    XCTAssertEqual(elementKind.type, UICollectionElementKindSectionFooter)
+  }
 
-          it("has the correct type") {
-            expect(elementKind.type) == UICollectionElementKindSectionFooter
-          }
-        }
-
-        context("when it is a section header") {
-          var elementKind: UICollectionViewElementKind!
-
-          beforeEach {
-            elementKind = UICollectionViewElementKind.sectionHeader
-          }
-
-          it("has the correct type") {
-            expect(elementKind.type) == UICollectionElementKindSectionHeader
-          }
-        }
-      }
-    }
+  func test_uicollectionView_elementKind_type_sectionHeader() {
+    let elementKind = UICollectionViewElementKind.sectionHeader
+    XCTAssertEqual(elementKind.type, UICollectionElementKindSectionHeader)
   }
 }
