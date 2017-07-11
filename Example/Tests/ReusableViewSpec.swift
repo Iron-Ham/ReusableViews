@@ -1,28 +1,36 @@
+import Nimble
+import Quick
+
 @testable import ReusableViews
-import XCTest
+class ReusableViewSpec: QuickSpec {
+    override func spec() {
 
-class ReusableViewSpec: XCTestCase {
+      describe("Reusable View") {
+        it("has a reuse identifier matching class name for UITableViewCells") {
+          expect(UITableViewCell.defaultReuseIdentifier) == String(describing: UITableViewCell.self)
+        }
 
-  func test_tableViewCell_hasMatchingReuseIdentifier() {
-    XCTAssertEqual(UITableViewCell.defaultReuseIdentifier, String(describing: UITableViewCell.self))
-  }
+        it("has a reuse identifier matching class name for UICollectionViewCells") {
+          expect(UICollectionViewCell.defaultReuseIdentifier) == String(describing: UICollectionViewCell.self)
+        }
 
-  func test_collectionViewCell_hasMatchingReuseIdentifier() {
-    XCTAssertEqual(UICollectionViewCell.defaultReuseIdentifier, String(describing: UICollectionViewCell.self))
-  }
+        it("has a reuse identifier matching class name for UITableViewHeaderFooterViews") {
+          expect(UITableViewHeaderFooterView.defaultReuseIdentifier) == String(describing: UITableViewHeaderFooterView.self)
+        }
+      }
 
-  func test_headerFooterView_hasMatchingReuseIdentifier() {
-    XCTAssertEqual(UITableViewHeaderFooterView.defaultReuseIdentifier, String(describing: UITableViewHeaderFooterView.self))
-  }
+      describe("Storyboard Compatible View") {
+        it("has a storyboard identifier matching its class name") {
+          expect(UIViewController.storyboardIdentifier) == String(describing: UIViewController.self)
+        }
+      }
 
-  func test_storyboardCompatibleView_hasMatchingStoryboardIdentifier() {
-    XCTAssertEqual(UIViewController.storyboardIdentifier, String(describing: UIViewController.self))
-  }
-
-  func test_nibLoadableView_hasMatchingNibNameIdentifier() {
-    XCTAssertEqual(MockNibLoadableView.nibName, String(describing: MockNibLoadableView.self))
-  }
-
+      describe("Nib Loadable View") {
+        it("has a nib name matching its class name") {
+          expect(MockNibLoadableView.nibName) == String(describing: MockNibLoadableView.self)
+        }
+      }
+    }
 }
 
 class MockNibLoadableView: UIView, NibLoadableView { }
