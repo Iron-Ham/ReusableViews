@@ -1,8 +1,12 @@
 PODS:
-  - ReusableViews (0.1.1)
-  - SwiftLint (0.20.0)
+  - Nimble (5.1.1)
+  - Quick (1.0.0)
+  - ReusableViews (0.1.0)
+  - SwiftLint (0.18.1)
 
 DEPENDENCIES:
+  - Nimble (~> 5.1.1)
+  - Quick (~> 1.0.0)
   - ReusableViews (from `../`)
   - SwiftLint
 
@@ -11,9 +15,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ReusableViews: a1e1989ad78b01678417e72979a096e1197a1b62
-  SwiftLint: 3f7543509c931d1291395335f34e245d3919b7f2
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  ReusableViews: 22fda0acb1d9d129ebcf6835b4868a3eae79ca6b
+  SwiftLint: b467d08f5b25dc3b3cfed243d8e1b74b91714c67
 
-PODFILE CHECKSUM: 97a929a727ed22d7967591767fc827efd69f1bc5
+PODFILE CHECKSUM: 71c23f5002a70d4074779bc57d5101879d6d92fe
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.2.0

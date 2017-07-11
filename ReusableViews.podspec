@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ReusableViews'
-  s.version          = '1.0.0'
+  s.version          = '0.1.1'
   s.summary          = 'Instantiate UIViewControllers from storyboards and dequeue views without a bang!'
 
   s.description      = <<-DESC
