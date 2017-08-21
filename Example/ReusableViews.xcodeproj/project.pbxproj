@@ -16,6 +16,10 @@
 		607FACEC1AFB9204008FA782 /* ReusableViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */; };
 		A39953B27D8DAEC7A1C02740 /* Pods_ReusableViews_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */; };
 		DC304F6F1EC527F90045FF8A /* ExampleTableViewHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */; };
+		DC53C6D71F4B367E005B86DC /* AdHocView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC53C6D61F4B367E005B86DC /* AdHocView.xib */; };
+		DC53C6D91F4B37F3005B86DC /* AdHocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53C6D81F4B37F3005B86DC /* AdHocView.swift */; };
+		DC53C6DB1F4B3828005B86DC /* AdHocNibLoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53C6DA1F4B3828005B86DC /* AdHocNibLoadableViewController.swift */; };
+		DC53C6DD1F4B43E6005B86DC /* MockNibLoadableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC53C6DC1F4B43E6005B86DC /* MockNibLoadableView.xib */; };
 		DC611B241EC4E54500ECCBDA /* UICollectionViewElementKindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */; };
 		DC611B261EC4F61F00ECCBDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC611B251EC4F61F00ECCBDA /* Localizable.strings */; };
 		DC611B281EC4FA1E00ECCBDA /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */; };
@@ -59,6 +63,10 @@
 		607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewSpec.swift; sourceTree = "<group>"; };
 		6FD1565B5670E71EA6CE11D7 /* Pods_ReusableViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReusableViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4E6F39139D19FB32F412A0 /* ReusableViews.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ReusableViews.podspec; path = ../ReusableViews.podspec; sourceTree = "<group>"; };
+		DC53C6D61F4B367E005B86DC /* AdHocView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdHocView.xib; sourceTree = "<group>"; };
+		DC53C6D81F4B37F3005B86DC /* AdHocView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdHocView.swift; sourceTree = "<group>"; };
+		DC53C6DA1F4B3828005B86DC /* AdHocNibLoadableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdHocNibLoadableViewController.swift; sourceTree = "<group>"; };
+		DC53C6DC1F4B43E6005B86DC /* MockNibLoadableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MockNibLoadableView.xib; sourceTree = "<group>"; };
 		DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewElementKindSpec.swift; sourceTree = "<group>"; };
 		DC611B251EC4F61F00ECCBDA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
@@ -123,11 +131,14 @@
 		607FACD21AFB9204008FA782 /* Example for ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
-				DC611B301EC5027300ECCBDA /* Views */,
-				DC611B2F1EC5026900ECCBDA /* Controllers */,
+				DC53C6D51F4B365F005B86DC /* Nib Loading */,
+				DC53C6D41F4B3642005B86DC /* Main */,
+				DC53C6D31F4B3612005B86DC /* ExampleCollectionViewSupplementaryView */,
+				DC53C6D11F4B35C3005B86DC /* ExampleCollectionViewCell */,
+				DC53C6D01F4B35AE005B86DC /* ExampleTableViewCell */,
+				DC53C6D21F4B35FE005B86DC /* ExampleTableViewHeaderFooterView */,
 				DC611B2E1EC5024000ECCBDA /* Assets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				DC611B2D1EC5022D00ECCBDA /* Storyboards & Nibs */,
 				DC611B251EC4F61F00ECCBDA /* Localizable.strings */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				DC611B291EC4FF1600ECCBDA /* GlobalConstants.swift */,
@@ -150,6 +161,7 @@
 				607FACEB1AFB9204008FA782 /* ReusableViewSpec.swift */,
 				DC611B221EC4E53500ECCBDA /* UICollectionViewElementKindSpec.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				DC53C6DC1F4B43E6005B86DC /* MockNibLoadableView.xib */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -181,17 +193,64 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DC611B2D1EC5022D00ECCBDA /* Storyboards & Nibs */ = {
+		DC53C6D01F4B35AE005B86DC /* ExampleTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */,
+				DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */,
 				DC611B2B1EC500EB00ECCBDA /* ExampleTableViewCell.xib */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				DC611B3D1EC507CE00ECCBDA /* ExampleCollectionCell.xib */,
-				DC611B431EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib */,
-				DC611B471EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib */,
 			);
-			name = "Storyboards & Nibs";
+			name = ExampleTableViewCell;
+			sourceTree = "<group>";
+		};
+		DC53C6D11F4B35C3005B86DC /* ExampleCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DC611B3D1EC507CE00ECCBDA /* ExampleCollectionCell.xib */,
+				DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */,
+				DC611B3B1EC507B300ECCBDA /* ExampleCollectionViewCell.swift */,
+			);
+			name = ExampleCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		DC53C6D21F4B35FE005B86DC /* ExampleTableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				DC611B471EC5129E00ECCBDA /* ExampleTableViewHeaderFooterView.xib */,
+				DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */,
+				DC611B491EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift */,
+			);
+			name = ExampleTableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+		DC53C6D31F4B3612005B86DC /* ExampleCollectionViewSupplementaryView */ = {
+			isa = PBXGroup;
+			children = (
+				DC611B431EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib */,
+				DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */,
+				DC611B411EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift */,
+			);
+			name = ExampleCollectionViewSupplementaryView;
+			sourceTree = "<group>";
+		};
+		DC53C6D41F4B3642005B86DC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				607FACD71AFB9204008FA782 /* ExampleViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		DC53C6D51F4B365F005B86DC /* Nib Loading */ = {
+			isa = PBXGroup;
+			children = (
+				DC53C6D61F4B367E005B86DC /* AdHocView.xib */,
+				DC53C6D81F4B37F3005B86DC /* AdHocView.swift */,
+				DC53C6DA1F4B3828005B86DC /* AdHocNibLoadableViewController.swift */,
+			);
+			name = "Nib Loading";
 			sourceTree = "<group>";
 		};
 		DC611B2E1EC5024000ECCBDA /* Assets */ = {
@@ -200,29 +259,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 			);
 			name = Assets;
-			sourceTree = "<group>";
-		};
-		DC611B2F1EC5026900ECCBDA /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD71AFB9204008FA782 /* ExampleViewController.swift */,
-				DC611B351EC503B500ECCBDA /* ExampleTableViewHeaderFooterViewController.swift */,
-				DC611B371EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift */,
-				DC611B391EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift */,
-				DC611B3F1EC5091800ECCBDA /* ExampleCollectionViewHeaderFooterViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		DC611B301EC5027300ECCBDA /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				DC611B271EC4FA1E00ECCBDA /* ExampleTableViewCell.swift */,
-				DC611B3B1EC507B300ECCBDA /* ExampleCollectionViewCell.swift */,
-				DC611B411EC5093800ECCBDA /* ExampleCollectionViewSupplementaryView.swift */,
-				DC611B491EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		FFD8920C433CA64E2A39396B /* Pods */ = {
@@ -326,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC53C6D71F4B367E005B86DC /* AdHocView.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				DC611B441EC5095000ECCBDA /* ExampleCollectionViewSupplementaryView.xib in Resources */,
 				DC611B2C1EC500EB00ECCBDA /* ExampleTableViewCell.xib in Resources */,
@@ -341,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC53C6DD1F4B43E6005B86DC /* MockNibLoadableView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,13 +391,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReusableViews_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0C75FC16E7C560064B38B652 /* [CP] Embed Pods Frameworks */ = {
@@ -368,9 +409,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Tests/Pods-ReusableViews_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReusableViews/ReusableViews.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReusableViews.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -383,13 +431,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReusableViews_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BE519C99EDF8165BA5BA7600 /* [CP] Copy Pods Resources */ = {
@@ -442,9 +493,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReusableViews_Example/Pods-ReusableViews_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReusableViews/ReusableViews.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReusableViews.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -466,7 +520,9 @@
 				DC611B3A1EC5074400ECCBDA /* ExampleCollectionViewCellViewController.swift in Sources */,
 				DC611B2A1EC4FF1600ECCBDA /* GlobalConstants.swift in Sources */,
 				DC611B3C1EC507B300ECCBDA /* ExampleCollectionViewCell.swift in Sources */,
+				DC53C6D91F4B37F3005B86DC /* AdHocView.swift in Sources */,
 				DC611B4A1EC512E300ECCBDA /* ExampleTableViewHeaderFooterView.swift in Sources */,
+				DC53C6DB1F4B3828005B86DC /* AdHocNibLoadableViewController.swift in Sources */,
 				DC611B281EC4FA1E00ECCBDA /* ExampleTableViewCell.swift in Sources */,
 				DC611B381EC5068D00ECCBDA /* ExampleTableViewCellViewController.swift in Sources */,
 			);

@@ -31,13 +31,19 @@ extension ExampleViewController: UITableViewDelegate {
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    guard let section = Section(rawValue: indexPath.section),
-      let exampleType: ExampleType = section == .collectionView ?
-        CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row) else {
+    guard let section = Section(rawValue: indexPath.section) else {
       fatalError("Unexpected section")
     }
+    var exampleType: ExampleType!
+    switch section {
+    case .adHoc:
+      exampleType = AdHocExample(rawValue: indexPath.row)
+    case .collectionView:
+      exampleType = CollectionViewExample(rawValue: indexPath.row)
+    case .tableView:
+      exampleType = TableViewExample(rawValue: indexPath.row)
+    }
     navigationController?.pushViewController(exampleType.controller, animated: true)
-
   }
 }
 
@@ -64,6 +70,8 @@ extension ExampleViewController: UITableViewDataSource {
       return CollectionViewExample.count
     case .tableView:
       return TableViewExample.count
+    case .adHoc:
+      return AdHocExample.count
     }
   }
 
@@ -73,16 +81,23 @@ extension ExampleViewController: UITableViewDataSource {
     }
     let cell = tableView.dequeueReusableCell(for: indexPath) as ExampleTableViewCell
 
-    let exampleType: ExampleType? = section == .collectionView ?
-      CollectionViewExample(rawValue: indexPath.row) : TableViewExample(rawValue: indexPath.row)
-    cell.titleLabel.text = exampleType?.title
+    var exampleType: ExampleType!
+    switch section {
+    case .adHoc:
+      exampleType = AdHocExample(rawValue: indexPath.row)
+    case .collectionView:
+      exampleType = CollectionViewExample(rawValue: indexPath.row)
+    case .tableView:
+      exampleType = TableViewExample(rawValue: indexPath.row)
+    }
+    cell.titleLabel.text = exampleType.title
 
     return cell
   }
 }
 
 fileprivate enum Section: Int {
-  case tableView, collectionView
+  case tableView, collectionView, adHoc
 
   var sectionHeader: String {
     switch self {
@@ -90,11 +105,13 @@ fileprivate enum Section: Int {
       return NSLocalizedString("ExampleViewController:SectionHeader:TableView", comment: "")
     case .collectionView:
       return NSLocalizedString("ExampleViewController:SectionHeader:CollectionView", comment: "")
+    case .adHoc:
+      return NSLocalizedString("ExampleViewController:SectionHeader:AdHoc", comment: "")
     }
   }
 
   static var all: [Section] {
-    return [.tableView, .collectionView]
+    return [.tableView, .collectionView, .adHoc]
   }
 
   static var count: Int {
@@ -107,6 +124,26 @@ protocol ExampleType {
   var title: String { get }
 
   var controller: UIViewController { get }
+}
+
+fileprivate enum AdHocExample: Int, ExampleType {
+  case adHocInstantiation
+
+  var title: String {
+    return NSLocalizedString("ExampleViewController:CellName:AdHocInstantiation", comment: "")
+  }
+
+  var controller: UIViewController {
+    return AdHocNibLoadableViewController()
+  }
+
+  static var all: [AdHocExample] {
+    return [.adHocInstantiation]
+  }
+
+  static var count: Int {
+    return all.count
+  }
 }
 
 fileprivate enum TableViewExample: Int, ExampleType {
