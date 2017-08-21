@@ -46,6 +46,17 @@ public extension NibLoadableView where Self: UIView {
     return String(describing: self)
   }
 
+  /// Instantiates and loads from nib a view that conforms to NibLoadableView
+  ///
+  /// Can fail if the nib cannot be loaded from the view:
+  ///  - Usually caused by not matching the name of the nib file with the name of the view 
+  ///  - Similar & overly long file names confuse Xcode. For example, AdHocNibLoadableView and AdHocNibLoadableViewController will confuse Xcode and prevent it from instantiating files correctly.
+  ///
+  /// - Parameters:
+  ///   - viewIndex: index of the view, by default 0 [currently, additional indexes are unsupported due to the requirement that nibName is the same as className
+  ///   - owner: by default nil
+  ///   - options: by default nil
+  /// - Returns: an instantiated view
   static func create(viewIndex: Int = 0, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
     let bundle = Bundle(for: Self.self)
     guard let view = bundle.loadNibNamed(Self.nibName, owner: owner, options: options)?[viewIndex] as? Self else {
