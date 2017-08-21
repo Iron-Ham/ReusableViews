@@ -28,4 +28,4 @@ class ExampleCollectionViewCellViewController: UICollectionViewController {
 
 }
 
-fileprivate let exampleTitles: [String] = ["This", "Is", "An", "Example", "Bruh"]
+private let exampleTitles: [String] = ["This", "Is", "An", "Example", "Bruh"]

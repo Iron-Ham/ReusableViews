@@ -21,8 +21,8 @@ class AdHocNibLoadableViewController: UIViewController {
     view.addConstraints(
       NSLayoutConstraint.constraints(
         withVisualFormat: "V:|[treeView]|",
-        options: .directionLeadingToTrailing, 
-        metrics: nil, 
+        options: .directionLeadingToTrailing,
+        metrics: nil,
         views: ["treeView": treeView]
       )
     )
@@ -30,7 +30,7 @@ class AdHocNibLoadableViewController: UIViewController {
       NSLayoutConstraint.constraints(
         withVisualFormat: "H:|[treeView]|",
         options: .directionLeadingToTrailing,
-        metrics: nil, 
+        metrics: nil,
         views: ["treeView": treeView]
       )
     )

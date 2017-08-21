@@ -96,7 +96,7 @@ extension ExampleViewController: UITableViewDataSource {
   }
 }
 
-fileprivate enum Section: Int {
+private enum Section: Int {
   case tableView, collectionView, adHoc
 
   var sectionHeader: String {
@@ -126,7 +126,7 @@ protocol ExampleType {
   var controller: UIViewController { get }
 }
 
-fileprivate enum AdHocExample: Int, ExampleType {
+private enum AdHocExample: Int, ExampleType {
   case adHocInstantiation
 
   var title: String {
@@ -146,7 +146,7 @@ fileprivate enum AdHocExample: Int, ExampleType {
   }
 }
 
-fileprivate enum TableViewExample: Int, ExampleType {
+private enum TableViewExample: Int, ExampleType {
   case cell, headerfooter
 
   var title: String {
@@ -176,7 +176,7 @@ fileprivate enum TableViewExample: Int, ExampleType {
   }
 }
 
-fileprivate enum CollectionViewExample: Int, ExampleType {
+private enum CollectionViewExample: Int, ExampleType {
   case cell, headerfooter
 
   var title: String {
