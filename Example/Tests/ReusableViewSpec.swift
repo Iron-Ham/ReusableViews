@@ -29,6 +29,10 @@ class ReusableViewSpec: QuickSpec {
         it("has a nib name matching its class name") {
           expect(MockNibLoadableView.nibName) == String(describing: MockNibLoadableView.self)
         }
+
+        it("can instantiate itself") {
+          expect(MockNibLoadableView.create()).to(beAnInstanceOf(MockNibLoadableView.self))
+        }
       }
     }
 }
