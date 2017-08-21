@@ -28,7 +28,7 @@ public protocol StoryboardCompatibleView: class {
 }
 
 public extension StoryboardCompatibleView where Self: UIViewController {
-  // Defaults to the same name as the class
+  /// Defaults to the same name as the class
   static var storyboardIdentifier: String {
     return String(describing: self)
   }
@@ -50,10 +50,12 @@ public extension NibLoadableView where Self: UIView {
   ///
   /// Can fail if the nib cannot be loaded from the view:
   ///  - Usually caused by not matching the name of the nib file with the name of the view 
-  ///  - Similar & overly long file names confuse Xcode. For example, AdHocNibLoadableView and AdHocNibLoadableViewController will confuse Xcode and prevent it from instantiating files correctly.
+  ///  - Similar & overly long file names confuse Xcode. For example, AdHocNibLoadableView and AdHocNibLoadableViewController will confuse 
+  ///    Xcode and prevent it from instantiating files correctly.
   ///
   /// - Parameters:
-  ///   - viewIndex: index of the view, by default 0 [currently, additional indexes are unsupported due to the requirement that nibName is the same as className
+  ///   - viewIndex: index of the view, by default 0 
+  ///     Currently, additional indexes are unsupported due to the requirement that nibName is the same as className
   ///   - owner: by default nil
   ///   - options: by default nil
   /// - Returns: an instantiated view

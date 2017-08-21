@@ -28,4 +28,4 @@ class ExampleTableViewCellViewController: UITableViewController {
 
 }
 
-fileprivate let cellText: [String] = ["Hello", "This", "Is", "An", "Example"]
+private let cellText: [String] = ["Hello", "This", "Is", "An", "Example"]

@@ -27,6 +27,14 @@ guard let cell = tableView.dequeueReusableCell(withIdentifier: "...", for: index
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Convenient Instantiation of a View From a Nib
+
+Requires that your view conforms to `NibLoadableView`.
+
+```swift
+let view = MyNibLoadableView.create()
+```
+
 ### Instantiation of a UIViewController From a Storyboard
 
 Requires that a class has the same storyboard identifier as its class name.
