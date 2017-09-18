@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ReusableViews'
-  s.version          = '0.2.0'
+  s.version          = '1.0.0'
   s.summary          = 'Instantiate UIViewControllers from storyboards and dequeue views without a bang!'
 
   s.description      = <<-DESC
@@ -15,7 +15,7 @@ allows you to instantiate view controllers from the storyboard without using a b
   s.source           = { :git => 'https://github.com/heshamsalman/ReusableViews.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/WhatsASoftware'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ReusableViews/Classes/**/*'
 end
