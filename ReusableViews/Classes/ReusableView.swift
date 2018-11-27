@@ -61,7 +61,7 @@ public extension NibLoadableView where Self: UIView {
   /// - Returns: an instantiated view
   static func create(viewIndex: Int = 0, owner: Any? = nil, options: [AnyHashable: Any]? = nil) -> Self {
     let bundle = Bundle(for: Self.self)
-    guard let view = bundle.loadNibNamed(Self.nibName, owner: owner, options: options as! [UINib.OptionsKey : Any])?[viewIndex] as? Self else {
+    guard let view = bundle.loadNibNamed(Self.nibName, owner: owner, options: options as? [UINib.OptionsKey : Any])?[viewIndex] as? Self else {
       fatalError("Could not instantiate \(Self.self) from nib -- have you conformed to the NibLoadable protocol?")
     }
     return view
