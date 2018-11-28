@@ -15,9 +15,9 @@ public enum UICollectionViewElementKind {
   var type: String {
     switch self {
     case .sectionFooter:
-      return UICollectionElementKindSectionFooter
+        return UICollectionView.elementKindSectionFooter
     case .sectionHeader:
-      return UICollectionElementKindSectionHeader
+        return UICollectionView.elementKindSectionHeader
     }
   }
 
